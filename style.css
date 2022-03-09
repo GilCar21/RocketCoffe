@@ -1,0 +1,209 @@
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--backgrond);
+    font-family: 'Manrope', sans-serif;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5rem 10vw 0;
+}
+
+.content header .close {
+    display: none;
+}
+
+.content header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .openMenu {
+    display: none;
+}
+
+.content header h2 {
+    display: none;
+}
+
+header>a {
+    border: solid .1rem var(--button);
+    padding: .8rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    gap: 1rem;
+}
+
+main .textButton {
+    display: none;
+}
+
+.content main {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content main h1 {
+    color: var(--text-color);
+    font-size: 4rem;
+    padding-top: 6rem;
+}
+
+.content main h1 span {
+    color: var(--backgrond);
+    text-shadow: .2rem 0 0 #8257E5, -.2rem 0 0 #8257E5, 0 .2rem 0 #8257E5, 0 -.2rem 0 #8257E5, .1rem .1rem #8257E5, -.1rem -.1rem 0 #8257E5, .1rem -.1rem 0 #8257E5, -.1rem .1rem 0 #8257E5;
+}
+
+.content .degrade1 {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    right: 0;
+    top: 0;
+    background: #996DFF;
+    filter: blur(200px);
+    background-position-x: 100px;
+    background-position-y: -100px;
+}
+
+.content .degrade2 {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    bottom: 0;
+    left: 0;
+    background: #996DFF;
+    filter: blur(200px);
+    background-position-x: -100px;
+    background-position-y: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+    .content header ul {
+        display: none;
+    }
+    .content header {
+        justify-content: space-between;
+    }
+    .content header .logo {
+        display: flex;
+        justify-content: space-between;
+    }
+    .content header h2 {
+        color: var(--text-color-menu-mobile);
+        display: block;
+    }
+    .content header>a {
+        display: none;
+    }
+    header .openMenu {
+        display: block;
+    }
+    header .cab {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .content main {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    main .textButton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--text-color-menu-mobile);
+    }
+    main .textButton h2 {
+        font-size: 2rem;
+        margin: 5rem 0;
+    }
+    main .textButton a {
+        border: solid .1rem var(--button);
+        padding: .8rem 2rem;
+        border-radius: .5rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .degrade1 {
+        display: none;
+    }
+    .content .degrade2 {
+        left: auto;
+    }
+    .content main h1 {
+        font-size: 2.5rem;
+    }
+    .content main .copoCoffe {
+        width: 95%;
+    }
+    .content header.active {
+        display: flex;
+        flex-direction: column;
+    }
+    .content header.active ul {
+        display: flex;
+        flex-direction: column;
+        background: var(--backgrond);
+        width: 100vw;
+        height: 100vh;
+        background: var();
+        justify-content: flex-start;
+        margin-top: 2rem;
+        gap: 0;
+    }
+    .content header.active ul li {
+        padding: 1rem;
+        border-top: solid .1rem var(--border);
+        border-bottom: solid .1rem var(--border);
+        margin: 0;
+    }
+    .content header.active ul li:hover {
+        border-left: .3rem solid var(--button);
+    }
+    .degrade2 {
+        width: 100%;
+    }
+}
