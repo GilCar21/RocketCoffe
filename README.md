@@ -1,8 +1,6 @@
 # RocketCoffe
 Desafio do Discover da Rocketset para desenvolver uma pagina utilizando HTML CSS e JAVASCRIPT
-Logo mais colocarei a disposição o site funcionando com outras pages. Colocarei o link a disposição
-Caso já queira ver ele fucionando, pode baixar o duplicar o projeto fazer o download e executar o arquivo index.html em algum navegador.
-
+Link para acesso ao site:https://rocketcoffegil.netlify.app/
 No desafio versão desktop esta estatica sem as funcionalidasde aprenstada assim:
 
 ![deskCoffe](https://user-images.githubusercontent.com/86432651/157504491-f5f8e0e1-0357-47c6-b739-4b0ce33e854b.png)
